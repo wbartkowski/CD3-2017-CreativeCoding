@@ -1,6 +1,7 @@
+int ile = 600;
 float grubosc;
-float[] X = new float[20];
-float[] Y = new float[20];
+float[] X = new float[ile];
+float[] Y = new float[ile];
 
 void setup()
 {
@@ -9,7 +10,7 @@ void setup()
   //noStroke();
   colorMode(HSB);
   int nr = 1;
-  while(nr<20)
+  while(nr<ile)
   {
     X[nr] = 200;
     Y[nr] = 200;
@@ -24,7 +25,7 @@ void draw()
   rect(0,0, width, height);
   grubosc = random(5,13);
   int nr = 1;
-  while(nr<20)
+  while(nr<ile)
   {
     X[nr] = X[nr] + random(-5,5);
     Y[nr] = Y[nr] + random(-5,5);
